@@ -50,7 +50,7 @@ func start(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	port := getPort()
-	c.addapp("test", "1")
+	c.addapp("darkroom", "1")
 	fmt.Println("API has started.")
 	fmt.Println("Running on port " + port)
 	router := mux.NewRouter().StrictSlash(true)
