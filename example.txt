@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func Version(query string) string {
+func version(query string) string {
 	response, _ := http.Get("https://tbvcontrol.herokuapp.com/ver/" + query)
 	output, err := ioutil.ReadAll(response.Body)
 	if err != nil {
